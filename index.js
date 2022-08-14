@@ -15,6 +15,11 @@ const render = require("./src/page-template.js");
 const teamArray = [];
 const idArray = [];
 
+const outPut = path.resolve('./dist', 'TeamGen')
+const path = path.join('./dist', 'teamprofile.html')
+/* The path.resolve() method resolves a sequence of paths or path segments into an absolute path.
+   The path.join() method joins the specified path segments into one path.
+*/
 
 function runApp() {
 
@@ -164,15 +169,16 @@ function runApp() {
     }
 
 
-}
+
 
     function generateTeam() {
+        if (!fs.existsSync(outPut)) {
+            fs.mkdirSync(outPut)
+        }
+        fs.writeFileSync(path, render(teamArray), "utf-8");
+    }
 
-
+        addmanager();
 }
-
-
-
-
 
 runApp();

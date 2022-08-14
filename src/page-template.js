@@ -1,3 +1,4 @@
+const Employee = require("../lib/Employee");
 const Engineer = require("../lib/Engineer");
 
 //Template Helper Code- Generating Page
@@ -112,4 +113,24 @@ const buildTeam = (team) => {
 
     };
 
+    const html = [];
+
+    html.push(team
+    .filter (employee => employee.getRole() === "Manager" )
+    .map (manager => buildManager (manager))
+    );
+
+    html.push(team
+    .filter(employee => employee.getRole () === "Engineer")
+    .map(engineer => buildEngineer(engineer))
+    .join('')
+    );
+
+    html.push(team
+    .filter(employee => employee.getRole() === "Intern")
+    .map(intern => buildIntern(intern))
+    .join('')
+    );
+
+    return html.join('');
 }

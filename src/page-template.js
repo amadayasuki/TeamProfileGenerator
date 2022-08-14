@@ -47,10 +47,11 @@ module.exports = () => {
 
 
 // Building Team:
-//Manager
+
 
 const buildTeam = (team) => {
-    const createManager = (manager) => {
+    //Manager
+    const buildManager = (manager) => {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -60,6 +61,7 @@ const buildTeam = (team) => {
                 <ul class="">
                     <li class=""> Email:${manager.getEmail()}<li>
                     <li class=""> Office #: ${manager.getOfficeNumber()}<li>
+                    <li class=""> Office #: ${manager.getId()}<li>
                 </ul>
             </p>
             </div>
@@ -70,7 +72,7 @@ const buildTeam = (team) => {
 
 //Engineer
 
-    const createEngineer = (engineer) => {
+    const buildEngineer = (engineer) => {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -91,7 +93,7 @@ const buildTeam = (team) => {
 
 //Interns
 
-    const createIntern = (intern) => {
+    const buildIntern = (intern) => {
         return `
         <div class="card" style="width: 18rem;">
             <div class="card-body">

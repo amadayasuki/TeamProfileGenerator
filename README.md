@@ -41,5 +41,5 @@ Run this program by navigating to the project root directory and entering `node 
 
 ## Walkthrough Video
 
-[Link to video](https://drive.google.com/file/d/1UhUbfnEaBCgH7iUJ5-c7oiLxQVqNzZ1L/view)
+[Link to video](https://drive.google.com/file/d/1loUee9DDRgPlyI8Rs-VZPBkV4eL_-rdI/view)
 

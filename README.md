@@ -27,9 +27,7 @@ THEN I exit the application, and the HTML is generated
 
 Install this program by cloning the repository, navigating to the project root directory and entering `npm install` into the terminal to install required dependencies.
 
-## Testing
 
-To run tests, navigate to the root directory of the project in your terminal and type `npm test`.
 
 ## Usage
 

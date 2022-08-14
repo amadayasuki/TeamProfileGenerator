@@ -37,9 +37,9 @@ Run this program by navigating to the project root directory and entering `node 
 
 ## Screenshots
 
-<img src="" style="width: 500px"/>
+<img src="https://github.com/amadayasuki/TeamProfileGenerator/blob/main/Screenshot.png?raw=true" style="width: 500px"/>
 
 ## Walkthrough Video
 
-[Link to video]()
+[Link to video](https://drive.google.com/file/d/1UhUbfnEaBCgH7iUJ5-c7oiLxQVqNzZ1L/view)
 

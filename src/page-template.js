@@ -50,7 +50,7 @@ module.exports = () => {
 // Building Team:
 
 
-const buildTeam = (team) => {
+const buildTeam = team => {
     //Manager
     const buildManager = (manager) => {
         return `

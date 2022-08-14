@@ -16,7 +16,7 @@ const teamArray = [];
 const idArray = [];
 
 const outPut = path.resolve('./dist', 'TeamGen')
-const path = path.join('./dist', 'teamprofile.html')
+path.join('./dist', 'teamprofile.html')
 /* The path.resolve() method resolves a sequence of paths or path segments into an absolute path.
    The path.join() method joins the specified path segments into one path.
 */
@@ -26,7 +26,7 @@ function runApp() {
     function addManager() {
 
         console.log("Are you ready to build your team?");
-        inquirer.createPromptModule([
+        inquirer.prompt([
 
             {
                 type: "input",
@@ -178,7 +178,7 @@ function runApp() {
         fs.writeFileSync(path, render(teamArray), "utf-8");
     }
 
-        addmanager();
+        addManager();
 }
 
 runApp();

@@ -2,7 +2,7 @@ const Employee = require("../lib/Employee");
 const Engineer = require("../lib/Engineer");
 
 //Template Helper Code- Generating Page
-module.exports = () => {
+module.exports = (team) => {
     return `
     <!doctype html>
     <html lang="en">

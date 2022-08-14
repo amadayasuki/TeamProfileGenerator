@@ -28,10 +28,10 @@ module.exports = (team) => {
         </div>
 
         <div class="container-fluid">
-            <div class ="row">
-                <div class="col justify-content-center">
+            <div class ="row justify-content-center">
+                
                 ${buildTeam(team)}
-                </div>
+                
             </div>
         </div>
     
@@ -55,15 +55,15 @@ const buildTeam = team => {
     const buildManager = (manager) => {
         return `
         <div class="card" style="width: 18rem;">
-            <div class="card-body">
-            <h5 class="card-title">${manager.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${manager.getRole()}</h6>
-            <p class="card-text">
-                <ul class="">
-                    <li class=""> Email:${manager.getEmail()}<li>
-                    <li class=""> Office #: ${manager.getOfficeNumber()}<li>
-                    <li class=""> Office #: ${manager.getId()}<li>
-                </ul>
+            <div class="card-body bg-success text-white">
+            <h1 class="card-title">${manager.getName()}</h1>
+            <h1 class="card-subtitle mb-2 text-dark">${manager.getRole()}</h1>
+            <p class="card-text font-weight-light">
+               
+                    Email:${manager.getEmail()}<br>
+                    Office #: ${manager.getOfficeNumber()}<br>
+                    Office #: ${manager.getId()}<br>
+               
             </p>
             </div>
         </div>
@@ -76,15 +76,15 @@ const buildTeam = team => {
     const buildEngineer = (engineer) => {
         return `
         <div class="card" style="width: 18rem;">
-            <div class="card-body">
-            <h5 class="card-title">${engineer.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${engineer.getRole()}</h6>
-            <p class="card-text">
-                <ul class="">
-                    <li class=""> Email:${engineer.getEmail()}<li>
-                    <li class=""> Github: ${engineer.getGithub()}<li>
-                    <li class=""> ID: ${engineer.getId()}<li>
-                </ul>
+            <div class="card-body bg-success">
+            <h1 class="card-title">${engineer.getName()}</h1>
+            <h1 class="card-subtitle mb-2 text-dark">${engineer.getRole()}</h1>
+            <p class="card-text font-weight-light">
+            
+                Email:${engineer.getEmail()}<br>
+                Github: ${engineer.getGithub()}<br>
+                ID: ${engineer.getId()}<br>
+                
             </p>
             </div>
         </div>
@@ -97,15 +97,15 @@ const buildTeam = team => {
     const buildIntern = (intern) => {
         return `
         <div class="card" style="width: 18rem;">
-            <div class="card-body">
-            <h5 class="card-title">${intern.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${intern.getRole()}</h6>
-            <p class="card-text">
-                <ul class="">
-                    <li class=""> Email:${intern.getEmail()}<li>
-                    <li class=""> School: ${intern.getSchool()}<li>
-                    <li class=""> ID: ${intern.getId()}<li>
-                </ul>
+            <div class="card-body bg-success text-white">
+            <h1 class="card-title">${intern.getName()}</h1>
+            <h1 class="card-subtitle mb-2 text-dark">${intern.getRole()}</h1>
+            <p class="card-text font-weight-light">
+               
+                Email:${intern.getEmail()}<br>
+                School: ${intern.getSchool()}<br>
+                ID: ${intern.getId()}<br>
+                
             </p>
             </div>
         </div>
